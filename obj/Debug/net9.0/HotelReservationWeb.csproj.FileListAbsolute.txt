@@ -218,3 +218,4 @@ C:\Users\anas\Desktop\emsi4eme\dotNet\HotelReservationWeb\HotelReservationWeb\bi
 C:\Users\anas\Desktop\emsi4eme\dotNet\HotelReservationWeb\HotelReservationWeb\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\anas\Desktop\emsi4eme\dotNet\HotelReservationWeb\HotelReservationWeb\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\anas\Desktop\emsi4eme\dotNet\HotelReservationWeb\HotelReservationWeb\obj\Debug\net9.0\HotelRes.343BDEB9.Up2Date
+C:\Users\anas\Desktop\emsi4eme\dotNet\HotelReservationWeb\HotelReservationWeb\obj\Debug\net9.0\HotelReservationWeb.sourcelink.json

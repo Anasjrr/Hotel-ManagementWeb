@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HotelReservationWeb</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -34,41 +34,13 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div >
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>HotelReservationWeb</h5>
-                <p>Providing the best hotel booking experience since 2024. Your comfort is our priority!</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-controller="Rooms" asp-action="Index">Rooms</a></li>
-                    <li><a asp-controller="About" asp-action="Index">About Us</a></li>
-                    <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <p>Email: support@hotelreservation.com</p>
-                <p>Phone: +1 (800) 123-4567</p>
-                <p>Address: 123 Hotel St, City, Country</p>
-            </div>
-        </div>
-        <div class="text-center mt-4">
-            <p>&copy; 2024 HotelReservationWeb. All rights reserved.</p>
-            <a asp-controller="Home" asp-action="Privacy">Privacy Policy</a> | <a asp-controller="Home" asp-action="Terms">Terms & Conditions</a>
-        </div>
-    </div>
-</footer>
+ 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
