@@ -1,0 +1,46 @@
+@model HotelReservationWeb.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6 border border-primary rounded mt-4 p-4">
+                <form id="account" method="post" asp-controller="User" asp-action="Login" class="py-5">
+                    <div class="d-flex ">
+                        <i class="icon-map-marker icon-4x text-success"></i>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                    </div>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <input asp-for="Email" class="form-control" placeholder="Email address" required autofocus />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Password" required />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-lg btn-success btn-block">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-md-6 border border-primary rounded mt-4 p-4">
+                <img src="../images/login.png" alt="Login Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (!string.IsNullOrEmpty(ViewData["Error"]?.ToString()))
+{
+    <div class="alert alert-danger mt-3 text-center">
+        @ViewData["Error"]
+    </div>
+}
