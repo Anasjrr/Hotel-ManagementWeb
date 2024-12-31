@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\HotelReservationWeb.bundle.scp.css",
-      "PackagePath": "staticwebassets\\HotelReservationWeb.h98qfmyot2.bundle.scp.css"
+      "PackagePath": "staticwebassets\\HotelReservationWeb.lifz95b2c5.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\css\\site.css",
@@ -13,8 +13,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\images\\home.png",
+      "PackagePath": "staticwebassets\\images\\home.png"
+    },
+    {
       "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\images\\login.png",
       "PackagePath": "staticwebassets\\images\\login.png"
+    },
+    {
+      "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\images\\room1.png",
+      "PackagePath": "staticwebassets\\images\\room1.png"
+    },
+    {
+      "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\images\\room2.png",
+      "PackagePath": "staticwebassets\\images\\room2.png"
+    },
+    {
+      "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\images\\room4.png",
+      "PackagePath": "staticwebassets\\images\\room4.png"
     },
     {
       "Id": "C:\\Users\\anas\\Desktop\\emsi4eme\\dotNet\\HotelReservationWeb\\HotelReservationWeb\\wwwroot\\js\\site.js",
