@@ -38,7 +38,7 @@
        
         
              position: absolute;
-  bottom: 0;
+  bottom: 2;
   width: 100%;
   white-space: nowrap;
   line-height: 40px;
@@ -97,7 +97,14 @@
                         <div class="card-body">
                             <h5 class="card-title">Deluxe Room</h5>
                             <p>$200/night - Perfect for relaxation.</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                             @if (ViewBag.IsAuthenticated)
+            {
+                <a href="Reservation" class="btn btn-primary">Book Now</a>
+            }
+            else
+            {
+               <a href="User/login" class="btn btn-primary">Book Now</a>
+            }
                         </div>
                     </div>
                 </div>
@@ -107,7 +114,14 @@
                         <div class="card-body">
                             <h5 class="card-title">Suite</h5>
                             <p>$400/night - Experience luxury at its finest.</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                             @if (ViewBag.IsAuthenticated)
+            {
+                <a href="Reservation" class="btn btn-primary">Book Now</a>
+            }
+            else
+            {
+                <a href="User/login" class="btn btn-primary">Book Now</a>
+            }
                         </div>
                     </div>
                 </div>
@@ -129,32 +143,32 @@
     <section class="contact-section bg-light mb-12">
         <div class="container mb-12">
             <h2 class="text-2xl fw-bold text-primary text-center mb-4">Contact Us</h2>
-            <form>
+            <form asp-action="AddContactUs" method="post">
+                @Html.AntiForgeryToken()
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName">
+                        <label for="FirstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="FirstName" name="FirstName">
                     </div>
                     <div class="col">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName">
+                        <label for="LastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="LastName" name="LastName">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="Email" name="Email">
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <label for="Message" class="form-label">Message</label>
+                    <textarea class="form-control" id="Message" name="Message" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mb-12">Submit</button>
+                <button type="submit" class="btn btn-primary mb-12">Sent</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mt-4">
         <p>&copy; 2024 Mimouna Luxury Hotel. All Rights Reserved.</p>
     </footer>
 

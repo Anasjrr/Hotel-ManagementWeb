@@ -14,8 +14,34 @@ namespace HotelReservationWeb.Controllers
 
         public IActionResult Index()
         {
-       
+               bool isAuthenticated = HttpContext.Session.GetString("UserId") != null;
+
+            // Pass the authentication status to the view
+            ViewBag.IsAuthenticated = isAuthenticated;
             return View();
         }
-    }
+
+
+
+      public async Task<IActionResult> AddContactUs(ContactUs contactUs){
+            Console.WriteLine($"Nameeee: {contactUs.FirstName},LastName: {contactUs.LastName}, Email: {contactUs.Email}, Message: {contactUs.Message}");
+            if(ModelState.IsValid){
+               
+                _context.Add(contactUs);
+                await _context.SaveChangesAsync();
+            }
+             return View("Index", contactUs);
+        }
+
+
+       public IActionResult ReservationPage()
+{
+    return RedirectToAction("User/Login");
 }
+}
+        
+    }
+    
+
+
+    

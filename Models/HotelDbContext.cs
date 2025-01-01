@@ -20,6 +20,8 @@ public partial class HotelDbContext : DbContext
     public virtual DbSet<User> Users { get; set; } = null!;
     public virtual DbSet<Reservation> Reservations { get; set; } = null!;
 
+    public virtual DbSet<ContactUs> ContactUs {get;set;}=null!;
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Client>(entity =>

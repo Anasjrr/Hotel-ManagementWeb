@@ -9,6 +9,6 @@ public partial class Client
     public bool IsClient { get; set; }
 
     // Navigation property for User
-    public virtual User? User { get; set; } // Corrected to 'User'
+    public virtual User? User { get; set; } 
 }
 
