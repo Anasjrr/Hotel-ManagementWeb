@@ -18,7 +18,7 @@ public partial class HotelDbContext : DbContext
     public virtual DbSet<Manager> Managers { get; set; } = null!;
     public virtual DbSet<Room> Rooms { get; set; } = null!;
     public virtual DbSet<User> Users { get; set; } = null!;
-    public virtual DbSet<Reservation> Reservations { get; set; } = null!;
+    public virtual DbSet<Reservation> Reservation { get; set; } = null!;
 
     public virtual DbSet<ContactUs> ContactUs {get;set;}=null!;
 

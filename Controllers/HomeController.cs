@@ -16,7 +16,7 @@ namespace HotelReservationWeb.Controllers
         {
                bool isAuthenticated = HttpContext.Session.GetString("UserId") != null;
 
-            // Pass the authentication status to the view
+        
             ViewBag.IsAuthenticated = isAuthenticated;
             return View();
         }

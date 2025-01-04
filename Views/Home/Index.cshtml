@@ -99,7 +99,8 @@
                             <p>$200/night - Perfect for relaxation.</p>
                              @if (ViewBag.IsAuthenticated)
             {
-                <a href="Reservation" class="btn btn-primary">Book Now</a>
+                <a href="Reservation?roomName=Deluxe_Room&price=200" class="btn btn-primary">Book Now</a>
+
             }
             else
             {
@@ -116,7 +117,8 @@
                             <p>$400/night - Experience luxury at its finest.</p>
                              @if (ViewBag.IsAuthenticated)
             {
-                <a href="Reservation" class="btn btn-primary">Book Now</a>
+                                <a href="Reservation?roomName=Suite&price=400" class="btn btn-primary">Book Now</a>
+
             }
             else
             {
@@ -131,7 +133,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Family Room</h5>
                             <p>$300/night - Perfect for family vacations.</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+             <a href="Reservation?roomName=Family_Room&price=300" class="btn btn-primary">Book Now</a>
+
                         </div>
                     </div>
                 </div>

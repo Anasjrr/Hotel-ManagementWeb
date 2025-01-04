@@ -9,10 +9,19 @@ builder.Services.AddDbContext<HotelDbContext>(options =>
 
 // Add session services
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 // Add controllers with views
 builder.Services.AddControllersWithViews();
+
+// Add logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 var app = builder.Build();
 
@@ -28,14 +37,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-
 app.UseSession();
+
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"); 
-
-// Configure default routing
-app.MapDefaultControllerRoute();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
